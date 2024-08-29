@@ -1,0 +1,86 @@
+/* Profile Card Styling */
+.profile-card {
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.6s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #007bff;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.username {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.email, .phone {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.address, .company {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address h3, .company h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.address p, .company p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.company p strong {
+    color: #333;
+}
